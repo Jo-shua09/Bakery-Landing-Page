@@ -2006,11 +2006,8 @@ img {
 
 /* responsiveness for 430px screen */
 @media screen and (min-width: 430px) and (max-width: 489px) {
-  .sidebar {
-    width: 100%;
-  }
   .fa-xmark {
-    margin-left: -385px;
+    margin-left: -215px;
   }
   .logo img {
     margin-left: -15px;
@@ -2131,6 +2128,9 @@ img {
 
 /* responsiveness for 414px screen */
 @media screen and (min-width: 396px) and (max-width: 429px) {
+  .sidebar {
+    width: 100%;
+  }
   .fa-xmark {
     margin-left: -365px;
   }
