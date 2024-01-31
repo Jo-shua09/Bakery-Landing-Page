@@ -1,0 +1,2161 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color1: #ffffff;
+  --color2: #de8c3c;
+  --Bcolor1-color: #282828;
+  --Bcolor2: #fff4e9;
+  --Tcolor1: #858585;
+  --icon-color: #d4b50f;
+  --ffamily1: "Roboto Serif", serif;
+  --ffamily2: "Roboto", sans-serif;
+  --ffamily3: "Poppins", sans-serif;
+}
+
+::-webkit-scrollbar {
+  scroll-behavior: smooth;
+  width: 12px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--color2);
+}
+
+body {
+  min-height: 100vh;
+}
+
+.header-nav {
+  background: url("images/Group-9.jpg");
+  filter: brightness(0.85);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.navigations {
+  width: 100%;
+  background-color: var(--Bcolor1-color);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  padding: 8px;
+}
+
+nav li:first-child {
+  margin-right: auto;
+  margin-left: -35px;
+}
+.logo {
+  display: none;
+}
+nav li img {
+  cursor: pointer;
+  width: 100px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav li {
+  height: 50px;
+}
+
+nav a {
+  height: 100%;
+  text-transform: capitalize;
+  font-family: var(--ffamily1);
+  text-decoration: none;
+  color: var(--color1);
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  padding: 0px 25px;
+  align-items: center;
+}
+
+nav a:hover {
+  color: var(--color2);
+  transition: 0.3s;
+}
+
+.search {
+  padding-left: 30px;
+}
+
+.search input {
+  padding: 5px;
+  position: relative;
+  border-radius: 20px;
+  width: 100px;
+  height: 30px;
+  border: none;
+}
+
+.search i {
+  position: absolute;
+  color: var(--Tcolor1);
+  top: 30px;
+  font-size: 13px;
+  cursor: pointer;
+  right: 220px;
+}
+
+::placeholder {
+  font-size: 12px;
+  padding-left: 5px;
+}
+
+.cart-profile {
+  padding-right: 50px;
+  position: relative;
+}
+
+.cart-profile i {
+  position: absolute;
+  color: var(--color1);
+  top: 23px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.cart-profile img {
+  cursor: pointer;
+  margin-top: 5px;
+  margin-left: 100px;
+  width: 50px;
+  cursor: pointer;
+  border: none;
+  border-radius: 100px;
+  clip-path: circle(16px);
+}
+
+/*    responsive navbar */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 260px;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.054);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  animation: fade-in 1s ease-in-out;
+}
+
+.sidebar li a {
+  margin-left: -30px;
+  color: var(--Bcolor2);
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.sidebar li:first-child {
+  display: none;
+}
+
+.sidebar li a:hover {
+  background-color: var(--color2);
+  color: var(--color1);
+  transition: 0.3s;
+}
+
+.fa-bars {
+  color: var(--color1);
+  font-size: 30px;
+  cursor: pointer;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+
+.fa-xmark {
+  color: var(--color1);
+  font-size: 30px;
+  padding: 20px;
+  margin-left: -155px;
+  cursor: pointer;
+}
+
+nav ul #display {
+  display: none;
+}
+
+.search-res,
+.cart-profile-res {
+  display: none;
+}
+
+.sidebar li {
+  width: 100%;
+}
+
+/*  home-page contents */
+.home {
+  width: 100%;
+  position: relative;
+}
+
+.home-text h1 {
+  font-size: 60px;
+  font-family: var(--ffamily1);
+  font-weight: 700;
+  color: var(--color1);
+  line-height: 70.26px;
+  padding: 7rem 20rem 0px 55px;
+}
+
+.home-text h1 span {
+  color: var(--color2);
+}
+
+.home-text p {
+  font-family: var(--ffamily2);
+  font-size: 30px;
+  font-weight: 400;
+  color: var(--color1);
+  padding: 10px 36rem 30px 55px;
+}
+
+.buttons {
+  padding-left: 55px;
+  padding-bottom: 13rem;
+}
+
+.buttons a button,
+.about-commit-text a button {
+  border-radius: 10px;
+  padding: 18px 22px;
+  background-color: var(--color2);
+  border: 2px solid #e9a869;
+  text-transform: capitalize;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color1);
+  font-family: var(--ffamily1);
+  transition: 0.2s;
+}
+
+.buttons a button:hover {
+  background-color: transparent;
+  color: var(--color2);
+  border: 2px solid var(--color1);
+}
+
+.buttons span a button {
+  background-color: transparent;
+  border: 2px solid var(--color1);
+  color: var(--color2);
+  margin-left: 25px;
+  transition: 0.2s;
+}
+
+.buttons span a button:hover {
+  background-color: var(--color2);
+  color: var(--color1);
+  border: 2px solid #e9a869;
+}
+
+/* Box-items */
+.box-items {
+  background-color: var(--Bcolor1-color);
+  width: 90%;
+  border: 3px solid var(--color2);
+  padding: 50px 0px;
+  margin-left: 4rem;
+  position: absolute;
+  bottom: -13rem;
+}
+
+#box-items.show {
+  opacity: 1;
+  animation: slide-in 1s ease-in-out;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.box {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.items {
+  gap: 20px;
+  padding-top: 10px;
+  display: flex;
+  text-align: left;
+  color: var(--color1);
+}
+
+.items .icon i {
+  margin-top: 10px;
+  font-size: 30px;
+  color: var(--color2);
+  font-weight: bold;
+}
+
+.items .text h4 {
+  line-height: 29.28px;
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-family: var(--ffamily1);
+}
+
+.items .text p {
+  font-size: 15px;
+  font-family: var(--ffamily3);
+}
+
+.item1,
+.item2 {
+  border-right: 2px solid var(--color2);
+  height: 5rem;
+}
+
+.item1 {
+  padding-right: 40px;
+}
+
+.item2 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.item3 {
+  padding-left: 40px;
+}
+
+.up {
+  display: none;
+}
+/* about us page */
+.about {
+  background-color: var(--Bcolor2);
+  margin-top: 8rem;
+  width: 100%;
+}
+
+.about-us,
+.how {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.about-us h3,
+.how h3,
+.blog-head h3 {
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: var(--ffamily1);
+  color: var(--Bcolor1-color);
+}
+
+.about-us p,
+.how p,
+.blog-head p {
+  font-size: 23px;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-family: var(--ffamily1);
+  color: var(--Bcolor1-color);
+  padding-top: 5px;
+  padding-bottom: 3.5rem;
+}
+
+.about-us p span,
+.how p span,
+.blog-head p span {
+  color: var(--color2);
+}
+
+.about-us-desc {
+  width: 100%;
+  display: flex;
+  padding-bottom: 5rem;
+}
+
+.about-commit-image {
+  margin-left: 6rem;
+}
+
+.about-commit-image img {
+  cursor: pointer;
+  width: 35rem;
+  height: 38rem;
+  animation: fade-in 4s ease-in-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.about-commit-text {
+  margin-left: 10rem;
+  margin-top: 6rem;
+  margin-right: 5rem;
+}
+
+.about-commit-text p {
+  font-size: 20px;
+  padding-right: 6rem;
+  font-family: var(--ffamily1);
+  font-weight: 600;
+  line-height: 31.81px;
+  margin-bottom: 2rem;
+}
+
+/* check first button style for this button style */
+
+.about-commit-text a button:hover {
+  background-color: var(--Bcolor1-color);
+  color: #de8c3c;
+}
+
+/* how it works section */
+/*smae header styling with about us section*/
+/*smae header styling with about us section*/
+.how-text-desc-image {
+  display: flex;
+  width: 100%;
+  padding-bottom: 100px;
+}
+
+.text-how-cover {
+  margin-left: 6rem;
+  margin-top: 4rem;
+}
+
+.how-image {
+  margin-right: 6rem;
+}
+
+.how-text {
+  gap: 20px;
+  display: flex;
+  margin-bottom: 3rem;
+  padding-right: 9rem;
+}
+
+.how-icon i {
+  color: var(--color2);
+  font-weight: 700;
+  background-color: #f4f1f1;
+  padding: 10px;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.text-how h4 {
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 10px;
+  font-family: var(--ffamily1);
+}
+
+.text-how p {
+  font-size: 15px;
+  font-weight: 700;
+  font-family: var(--ffamily3);
+  color: #a49f9f;
+}
+
+.how-image img {
+  cursor: pointer;
+  width: 35rem;
+  height: 38rem;
+  animation: fade-in 4s ease-in-out;
+}
+
+/* our products page */
+.products {
+  width: 100%;
+  background-color: var(--Bcolor2);
+}
+
+.products-headings {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 50px;
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+.product-head {
+  padding-left: 15px;
+  line-height: 30.99px;
+}
+
+.product-head h3 {
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: var(--ffamily1);
+  color: var(--Bcolor1-color);
+}
+
+.product-head p {
+  font-size: 23px;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-family: var(--ffamily1);
+  color: var(--Bcolor1-color);
+}
+
+.product-head span {
+  color: var(--color2);
+}
+
+.product-button {
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+.product-button a {
+  font-family: var(--ffamily1);
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--color2);
+  font-size: 20px;
+  font-weight: 700;
+  border-bottom: 2px solid var(--color2);
+  transition: 0.3s;
+}
+
+.product-button a:hover {
+  text-align: center;
+  border: 2px solid var(--color2);
+  background-color: var(--Bcolor1-color);
+  color: var(--Bcolor2);
+  padding: 3px 13px;
+  border-radius: 10px;
+}
+
+.product-join {
+  display: flex;
+}
+.carousel {
+  display: none;
+}
+.second,
+.second-two {
+  padding-top: 50px;
+}
+
+.product-background {
+  border-top-right-radius: 20px;
+  margin-left: 50px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  margin-left: 50px;
+  padding-bottom: 20px;
+  transition: transform 0.3s ease;
+  background-color: var(--color1);
+}
+
+img {
+  cursor: pointer;
+}
+
+.product-background:nth-child(3) {
+  margin-right: 50px;
+}
+
+.product-background:hover {
+  transform: scale(1.15);
+}
+
+.products-image img {
+  width: 100%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.products-image h4 {
+  text-transform: capitalize;
+  font-weight: bolder;
+  font-size: 20px;
+  font-family: var(--ffamily1);
+  color: var(--Bcolor1-color);
+}
+
+.products-desc ul li {
+  list-style: none;
+  display: inline;
+  color: var(--Tcolor1);
+  font-family: var(--ffamily3);
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.products-desc i {
+  font-size: 15px;
+  color: #de8c3c;
+}
+
+.products-desc h5 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 2.1rem;
+  color: var(--Bcolor1-color);
+  font-family: var(--ffamily1);
+}
+
+.products-desc h5 span {
+  color: var(--Tcolor1);
+  text-decoration: line-through;
+  font-size: 15px;
+  padding-left: 5px;
+}
+
+.products-image h4 {
+  padding-top: 12px;
+  padding-left: 15px;
+}
+
+.products-desc {
+  margin-top: -5px;
+  margin-left: -17px;
+}
+
+.products-desc h5 {
+  margin-top: -10px;
+}
+
+/* testimonials session */
+.testimony {
+  padding-top: 150px;
+}
+
+.testimonies-text {
+  padding-left: 50px;
+}
+
+.testimonies-text h2 {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 700;
+  color: var(--Bcolor1-color);
+  font-family: var(--ffamily1);
+}
+
+.testimonies-text h4 {
+  font-size: 25px;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-family: var(--ffamily1);
+  color: var(--Bcolor1-color);
+}
+
+.testimonies-text h4 span {
+  color: var(--color2);
+}
+
+.testimonies-text p {
+  font-size: 15px;
+  font-family: var(--ffamily3);
+  font-weight: 600;
+  width: 40%;
+  color: var(--Tcolor1);
+}
+
+.images-rating {
+  padding-left: 50px;
+}
+
+.images-rating {
+  display: flex;
+}
+
+.rating-images img {
+  width: 4.5rem;
+}
+
+.rating-images img:nth-child(2),
+.rating-images img:nth-child(3) {
+  margin-left: -40px;
+}
+
+.rating {
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+.rating i {
+  font-size: 30px;
+  color: var(--icon-color);
+  padding-right: 5px;
+}
+
+.rating h5 {
+  font-size: 25px;
+  font-family: var(--ffamily1);
+  color: var(--Bcolor1-color);
+  font-weight: 700;
+}
+
+.rating h5 span {
+  color: var(--Tcolor1);
+  font-size: 15px;
+  font-weight: 600;
+  font-family: var(--ffamily3);
+}
+
+.image-testimony {
+  margin-right: 50px;
+  padding-top: 20px;
+  justify-content: right;
+  gap: 50px;
+  display: flex;
+  padding-bottom: 100px;
+}
+
+.back,
+.forward {
+  margin-top: 7rem;
+}
+
+.back img,
+.forward img {
+  width: 5rem;
+  padding: 10px;
+  height: 5rem;
+  background-color: var(--color2);
+  border-radius: 50px;
+  align-items: center;
+}
+
+.back {
+  opacity: 0.6;
+}
+
+.image-comment {
+  background-color: var(--color1);
+  padding: 30px 50px;
+  border-radius: 20px;
+  display: flex;
+  width: 30%;
+}
+
+.image-comment img {
+  width: 5.5rem;
+  height: 5.5rem;
+}
+
+.desc {
+  padding-left: 10px;
+}
+
+.desc h3 {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-family: var(--ffamily1);
+  color: var(--Bcolor1-color);
+  padding-top: 6px;
+}
+
+.desc h5 {
+  margin-top: px;
+  font-size: 15px;
+  text-transform: capitalize;
+  font-weight: 700;
+  color: var(--Tcolor1);
+  font-family: var(--ffamily3);
+}
+
+.desc i {
+  color: var(--icon-color);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.par {
+  font-size: 15px;
+  font-family: var(--ffamily3);
+  margin-left: -5.5rem;
+  padding-top: 10px;
+}
+
+.video {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.videos {
+  margin-left: 50px;
+  position: relative;
+}
+
+.videos img {
+  filter: brightness(0.8);
+  width: 96%;
+}
+
+.video-play {
+  position: absolute;
+  margin-top: -23rem;
+  margin-left: 38rem;
+}
+
+.video-play img {
+  background-color: #fff;
+  clip-path: circle(38%);
+  width: 7rem;
+  transition: transform 0.3s ease;
+}
+
+.video-play img:hover {
+  transform: scale(1.2);
+}
+
+/* blog session */
+.blog {
+  padding-bottom: 100px;
+}
+
+.blog-head {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.blog-images {
+  margin-top: -20px;
+  margin-left: 50px;
+  margin-right: 10px;
+  display: flex;
+}
+
+.blogs img {
+  width: 90%;
+}
+
+.blogs h5 {
+  padding-top: 10px;
+  color: var(--Tcolor1);
+  font-size: 15px;
+  padding-right: 10px;
+  font-family: var(--ffamily3);
+  text-transform: capitalize;
+}
+
+.blogs h5 span {
+  border-left: 2px solid var(--Tcolor1);
+  padding-left: 5px;
+}
+
+.blogs p {
+  font-size: 20px;
+  font-weight: 700;
+  width: 80%;
+  font-family: var(--ffamily1);
+  color: var(--Bcolor1-color);
+}
+
+.blogs a {
+  text-decoration: none;
+  color: var(--Bcolor1-color);
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.blogs a img {
+  width: 25px;
+  padding-left: 5px;
+}
+
+.blogs a:hover {
+  color: var(--color2);
+}
+
+/* footer session */
+.footer {
+  background-color: var(--Bcolor1-color);
+  color: var(--color1);
+}
+
+.footers {
+  display: flex;
+  gap: 130px;
+  padding-bottom: 50px;
+  margin-left: 50px;
+  padding-top: 100px;
+}
+
+.the-bakery {
+  width: 37%;
+}
+
+.bakery-heading {
+  display: flex;
+}
+
+.the-bakery-image img {
+  width: 9rem;
+  margin-left: -25px;
+}
+
+.the-bakery-head h2 {
+  margin-top: 60px;
+  text-transform: capitalize;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: var(--ffamily1);
+}
+
+.the-bakery p {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--ffamily3);
+}
+
+.icons-the-bakery {
+  margin-left: 30px;
+  animation: beat 1.5s infinite alternate;
+}
+
+.icons-the-bakery i {
+  clip-path: circle();
+  margin-right: 10px;
+  background-color: var(--Tcolor1);
+  padding: 15px;
+  font-size: 25px;
+  border-radius: 50px;
+}
+
+.icons-the-bakery i:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.icons-the-bakery i:nth-child(2) {
+  animation-delay: 1.5s;
+}
+
+.icons-the-bakery i:nth-child(3) {
+  animation-delay: 3s;
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.company,
+.contact {
+  padding-top: 60px;
+}
+
+.company h3,
+.contact h3 {
+  text-transform: capitalize;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: var(--ffamily1);
+  padding-bottom: 45px;
+}
+
+.company a,
+.contact a {
+  color: var(--color1);
+  text-transform: capitalize;
+  line-height: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  font-family: var(--ffamily3);
+}
+
+.company a:hover,
+.contact a:hover {
+  color: var(--color2);
+}
+
+.copy-terms {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  margin: 0px 50px;
+}
+
+/* responsiveness */
+/* responsiveness */
+
+/* responsive to 800px screens */
+@media screen and (max-width: 800px) {
+  .responsive {
+    display: none;
+  }
+  .logo {
+    float: left;
+    width: 100%;
+    height: 20px;
+    margin-left: -30px;
+    display: block;
+  }
+  .logo img {
+    width: 7rem;
+  }
+  nav li:first-child {
+    display: none;
+    margin-left: -10px;
+  }
+
+  nav ul #display {
+    display: block;
+  }
+
+  /* home-content page */
+  .home-text h1 {
+    font-size: 40px;
+    padding: 10rem 2rem 0px 55px;
+    line-height: 50.26px;
+  }
+
+  .home-text p {
+    font-size: 20px;
+    padding: 10px 16rem 30px 55px;
+  }
+
+  .box-items {
+    bottom: 5rem;
+    margin-top: -390px;
+    margin-left: 2.5rem;
+  }
+
+  .items .icon i {
+    font-size: 15px;
+  }
+
+  .items .text h4 {
+    font-size: 15px;
+  }
+
+  .items .text p {
+    font-size: 11px;
+  }
+
+  .item1,
+  .item2 {
+    height: 4rem;
+  }
+
+  .item1 {
+    padding-right: 20px;
+  }
+
+  .item2 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .item3 {
+    padding-left: 20px;
+  }
+
+  /* about page */
+  .about-us-desc {
+    display: block;
+  }
+
+  .about-commit-image {
+    margin-left: 7rem;
+  }
+
+  .about-commit-text {
+    text-align: center;
+    margin-left: 0rem;
+    margin-top: 3rem;
+    padding-left: 5rem;
+    margin-right: 0rem;
+  }
+
+  .about-commit-text a {
+    margin-left: -6rem;
+  }
+
+  /* how it works page */
+  .how-text-desc-image {
+    display: block;
+  }
+
+  .how-text {
+    display: block;
+  }
+
+  .how-icon i {
+    margin-bottom: 10px;
+    font-size: 25px;
+    padding: 15px;
+  }
+
+  .text-how-cover {
+    margin-left: 8rem;
+    margin-top: 1rem;
+  }
+
+  .how-image {
+    margin-left: 7rem;
+    margin-right: 0rem;
+  }
+
+  /* products page */
+  .product-join {
+    display: block;
+  }
+
+  .product-background {
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    margin-left: 6rem;
+    padding-bottom: 40px;
+  }
+
+  .product-background {
+    margin-bottom: 50px;
+    margin-right: 6rem;
+  }
+
+  .product-background:nth-child(3) {
+    margin-right: 6rem;
+  }
+
+  .second {
+    padding-top: 10px;
+  }
+
+  .products-image img {
+    width: 100%;
+  }
+
+  .products-image h4 {
+    font-size: 25px;
+    padding-top: 20px;
+  }
+
+  .products-desc ul li {
+    font-size: 20px;
+  }
+
+  .products-desc h5 {
+    font-size: 20px;
+  }
+
+  /* testimonies page */
+  .testimonies-text p {
+    width: 50%;
+  }
+
+  .image-comment {
+    width: 50%;
+  }
+
+  .image-testimony {
+    gap: 30px;
+  }
+
+  /* short video page */
+  .video-play {
+    margin-top: -15rem;
+    margin-left: 22rem;
+  }
+
+  /* blogs page */
+  .blogs h5 {
+    font-size: 12px;
+  }
+
+  .blogs p {
+    font-size: 18px;
+  }
+
+  .blogs a {
+    font-size: 15px;
+  }
+
+  /* footer page */
+  .footers {
+    gap: 50px;
+  }
+
+  .the-bakery {
+    width: 47%;
+  }
+
+  .the-bakery-image img {
+    width: 8rem;
+    margin-top: 20px;
+  }
+
+  .the-bakery-head h2 {
+    font-size: 20px;
+    margin-top: 78px;
+  }
+
+  .icons-the-bakery i {
+    font-size: 18px;
+  }
+
+  .company h3,
+  .contact h3 {
+    font-size: 20px;
+    margin-top: 18px;
+  }
+
+  .the-bakery p,
+  .company a,
+  .contact a {
+    font-size: 15px;
+  }
+
+  .contact {
+    padding-right: 40px;
+  }
+
+  .copyright p,
+  .terms p {
+    font-size: 13px;
+  }
+}
+
+/* responsive to 720px screens */
+@media screen and (max-width: 720px) {
+  .responsive {
+    display: none;
+  }
+  .logo {
+    float: left;
+    width: 100%;
+    height: 20px;
+    margin-left: -50px;
+    display: block;
+  }
+  .logo img {
+    width: 6.5rem;
+  }
+  nav li:first-child {
+    display: none;
+  }
+  nav ul #display {
+    display: block;
+  }
+
+  /* home-content page */
+  .home-text h1 {
+    font-size: 35px;
+    padding: 10rem 10rem 0px 25px;
+    line-height: 50.26px;
+  }
+
+  .home-text p {
+    font-size: 20px;
+    padding: 10px 16rem 30px 25px;
+  }
+  .buttons {
+    padding-left: 25px;
+    padding-bottom: 13rem;
+  }
+  .items {
+    gap: 15px;
+    padding-top: 16px;
+  }
+  .items .icon i {
+    font-size: 15px;
+  }
+
+  .items .text h4 {
+    font-size: 13px;
+    line-height: 10px;
+  }
+
+  .items .text p {
+    font-size: 11px;
+  }
+
+  .item1,
+  .item2 {
+    height: 4rem;
+  }
+
+  .item1 {
+    padding-right: 15px;
+  }
+
+  .item2 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .item3 {
+    padding-left: 15px;
+  }
+
+  /* about page */
+  .about-us-desc {
+    display: block;
+  }
+
+  .about-commit-image {
+    margin-left: 5rem;
+  }
+
+  .about-commit-text {
+    text-align: center;
+    margin-left: 0rem;
+    margin-top: 3rem;
+    padding-left: 5rem;
+    margin-right: 0rem;
+  }
+
+  .about-commit-text a {
+    margin-left: -6rem;
+  }
+
+  /* how it works page */
+  .how-text-desc-image {
+    display: block;
+  }
+
+  .how-text {
+    display: block;
+  }
+
+  .how-icon i {
+    margin-bottom: 10px;
+    font-size: 25px;
+    padding: 15px;
+  }
+
+  .text-how-cover {
+    margin-left: 8rem;
+    margin-top: 1rem;
+  }
+
+  .how-image {
+    margin-left: 5rem;
+    margin-right: 0rem;
+  }
+
+  /* products page */
+  .product-join {
+    display: block;
+  }
+
+  .products-headings {
+    padding: 0px 25px;
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+  .product-head h3,
+  .about-us h3,
+  .how h3,
+  .blog-head h3 {
+    font-size: 18px;
+  }
+
+  .product-head p,
+  .about-us p,
+  .how p,
+  .blog-head p {
+    font-size: 20px;
+  }
+  .product-background {
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    margin-left: 6rem;
+    padding-bottom: 40px;
+  }
+
+  .product-background {
+    margin-bottom: 50px;
+    margin-right: 6rem;
+  }
+
+  .product-background:nth-child(3) {
+    margin-right: 6rem;
+  }
+
+  .second {
+    padding-top: 10px;
+  }
+
+  .products-image img {
+    width: 100%;
+  }
+
+  .products-image h4 {
+    font-size: 25px;
+    padding-top: 20px;
+  }
+
+  .products-desc ul li {
+    font-size: 20px;
+  }
+
+  .products-desc h5 {
+    font-size: 20px;
+  }
+
+  /* testimonies page */
+  .testimonies-text p {
+    width: 60%;
+  }
+  .testimonies-text {
+    padding-left: 25px;
+  }
+
+  .testimonies-text h2 {
+    font-size: 18px;
+  }
+  .testimonies-text h4 {
+    font-size: 20px;
+  }
+  .image-comment {
+    width: 50%;
+  }
+  .images-rating {
+    padding-left: 25px;
+  }
+
+  .rating-images img {
+    width: 3.5rem;
+  }
+  .rating h5,
+  .rating i {
+    font-size: 23px;
+  }
+  .rating h5 span {
+    font-size: 13px;
+  }
+
+  .rating-images img:nth-child(2),
+  .rating-images img:nth-child(3) {
+    margin-left: -30px;
+  }
+  .rating {
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+  .desc {
+    padding-left: 15px;
+  }
+  .desc h3 {
+    font-size: 18px;
+    padding-top: 4px;
+  }
+  .desc h5 {
+    font-size: 13px;
+    margin-top: -3px;
+  }
+  .desc i {
+    font-size: 13px;
+  }
+  .image-comment {
+    width: 60%;
+  }
+  .image-comment img {
+    width: 5rem;
+    height: 5rem;
+  }
+  .par {
+    padding-top: 15px;
+  }
+
+  /* short video page */
+  .videos {
+    margin-left: 25px;
+  }
+  .video-play img {
+    width: 5rem;
+  }
+  .video-play {
+    margin-top: -12rem;
+    margin-left: 20rem;
+  }
+
+  /* blogs page */
+  .blog-images {
+    justify-content: center;
+    margin-left: 6rem;
+    margin-right: 0px;
+    display: block;
+  }
+  .blogs {
+    padding-bottom: 30px;
+  }
+  .second-two {
+    padding-top: 20px;
+  }
+  .blogs img {
+    width: 85%;
+  }
+  .blogs h5 {
+    font-size: 15px;
+  }
+
+  .blogs p {
+    font-size: 25px;
+  }
+
+  .blogs a {
+    font-size: 20px;
+  }
+
+  /* footer page */
+  .footers {
+    gap: 50px;
+    margin-left: 25px;
+    padding-top: 0px;
+  }
+
+  .the-bakery {
+    width: 50%;
+  }
+
+  .the-bakery-image img {
+    width: 8rem;
+    margin-top: 30px;
+  }
+
+  .the-bakery-head h2 {
+    font-size: 18px;
+    margin-top: 88px;
+  }
+  .icons-the-bakery {
+    margin-left: 20px;
+  }
+  .icons-the-bakery i {
+    font-size: 13px;
+    margin-right: 0px;
+  }
+
+  .company h3,
+  .contact h3 {
+    font-size: 20px;
+    margin-top: 28px;
+    padding-bottom: 25px;
+  }
+
+  .the-bakery p,
+  .company a,
+  .contact a {
+    font-size: 15px;
+  }
+  .contact {
+    padding-right: 25px;
+  }
+  .copy-terms {
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+
+  .copyright p,
+  .terms p {
+    font-size: 10px;
+  }
+}
+
+/* responsive to 660px screens */
+@media screen and (max-width: 660px) {
+  .logo {
+    float: left;
+    width: 100%;
+    height: 20px;
+    margin-left: -50px;
+    display: block;
+  }
+  .logo img {
+    width: 6.5rem;
+  }
+  nav li:first-child {
+    display: none;
+  }
+  nav ul #display {
+    display: block;
+  }
+
+  /* home-content page */
+  .home-text h1 {
+    font-size: 35px;
+    padding: 10rem 0rem 0px 25px;
+    line-height: 50.26px;
+  }
+
+  .home-text p {
+    font-size: 20px;
+    padding: 10px 6rem 30px 25px;
+  }
+  .box-items {
+    margin-left: 6rem;
+    bottom: -2rem;
+    width: 70%;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.054);
+    backdrop-filter: blur(10px);
+    padding: 40px 0px;
+  }
+  .box {
+    display: block;
+    justify-content: center;
+  }
+  .items {
+    gap: 0px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: var(--Bcolor1-color);
+  }
+  .item1 {
+    color: var(--color1);
+  }
+  .items .icon {
+    margin-bottom: 15px;
+  }
+  .items .icon i {
+    margin-top: 0px;
+    margin-right: 30px;
+    font-size: 30px;
+    color: var(--color2);
+  }
+  .item1 .icon i {
+    margin-bottom: 10px;
+    margin-left: -35px;
+  }
+  .items .text h4 {
+    line-height: 10.28px;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-family: var(--ffamily1);
+  }
+
+  .items .text p {
+    font-size: 15px;
+    font-family: var(--ffamily3);
+  }
+
+  .item1,
+  .item2 {
+    margin-bottom: 10px;
+    border: none;
+  }
+
+  .item1 {
+    padding-right: 0px;
+  }
+
+  .item2 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .item3 {
+    padding-left: 0px;
+  }
+
+  /* about page */
+  .about {
+    margin-top: 250px;
+  }
+  .about-commit-image {
+    margin-left: 3rem;
+  }
+  .how-image {
+    margin-left: 3rem;
+    margin-right: 0rem;
+  }
+  .video-play {
+    margin-top: -12rem;
+    margin-left: 18rem;
+  }
+}
+
+/* responsive to 550px screens */
+@media screen and (max-width: 550px) {
+  .logo {
+    float: left;
+    width: 100%;
+    height: 20px;
+    margin-left: -50px;
+    display: block;
+  }
+  .logo img {
+    margin-left: -10px;
+    width: 6.5rem;
+  }
+  nav li:first-child {
+    display: none;
+  }
+  nav ul #display {
+    display: block;
+  }
+
+  /* home-content page */
+  .home-text h1 {
+    font-size: 25px;
+    padding: 10rem 5rem 0px 25px;
+    line-height: 30.26px;
+  }
+
+  .home-text p {
+    font-size: 18px;
+    padding: 10px 3rem 30px 25px;
+  }
+  .box-items {
+    margin-left: 5rem;
+    bottom: 3rem;
+    width: 70%;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.054);
+    backdrop-filter: blur(10px);
+    padding: 40px 0px;
+  }
+  .box {
+    display: block;
+    justify-content: center;
+  }
+  .items {
+    gap: 0px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: var(--Bcolor1-color);
+  }
+  .item1 {
+    color: var(--color1);
+  }
+  .items .icon {
+    margin-bottom: 15px;
+  }
+  .items .icon i {
+    margin-top: 0px;
+    margin-right: 30px;
+    font-size: 30px;
+    color: var(--color2);
+  }
+  .item1 .icon i {
+    margin-bottom: 10px;
+    margin-left: -35px;
+  }
+  .items .text h4 {
+    line-height: 10.28px;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-family: var(--ffamily1);
+  }
+
+  .items .text p {
+    font-size: 15px;
+    font-family: var(--ffamily3);
+  }
+
+  .item1,
+  .item2 {
+    margin-bottom: 10px;
+    border: none;
+  }
+  .up {
+    position: fixed;
+    z-index: 999;
+    display: block;
+    right: 0;
+    margin-top: 9rem;
+    margin-right: 10px;
+    background-color: var(--color2);
+    padding: 15px;
+    clip-path: circle();
+    color: var(--Bcolor2);
+  }
+  .up a {
+    text-decoration: none;
+    color: var(--Bcolor2);
+    transition: 0.5s;
+  }
+  .up i {
+    font-size: 20px;
+  }
+  .item1 {
+    padding-right: 0px;
+  }
+
+  .item2 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .item3 {
+    padding-left: 0px;
+  }
+
+  /* about page */
+  .about {
+    margin-top: 250px;
+  }
+  .about-commit-image {
+    margin-left: 3.2rem;
+  }
+  .about-commit-image img,
+  .how-image img {
+    width: 28rem;
+    height: 30rem;
+  }
+  .about-commit-text {
+    text-align: center;
+    align-items: center;
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+  .about-commit-text p {
+    padding-right: 5rem;
+  }
+  .text-how-cover {
+    margin-left: 3.2rem;
+  }
+  .how-text {
+    padding-right: 4rem;
+  }
+  .how-image {
+    margin-left: 3.2rem;
+    margin-right: 0rem;
+  }
+  .testimonies-text p {
+    width: 80%;
+  }
+  .back img,
+  .forward img {
+    width: 4rem;
+    height: 4rem;
+  }
+  .image-testimony {
+    margin-right: 25px;
+  }
+  .image-comment {
+    padding: 15px 25px;
+  }
+  .video-play {
+    margin-top: -11rem;
+    margin-left: 15rem;
+  }
+  .blog-images {
+    margin-left: 4.5rem;
+  }
+  .footers {
+    display: block;
+    gap: 0px;
+    gap: initial;
+  }
+  .the-bakery {
+    width: 75%;
+  }
+  .icons-the-bakery {
+    margin-left: 40px;
+  }
+  .company,
+  .contact {
+    padding-top: 40px;
+  }
+  .company h3,
+  .contact h3 {
+    margin-top: 0px;
+  }
+  .copy-terms {
+    margin: 0px 25px;
+  }
+}
+
+/* responsive to 490px screens */
+@media screen and (max-width: 490px) {
+  /* home-content page */
+  .box-items {
+    margin-left: 4.5rem;
+    bottom: 1rem;
+    width: 70%;
+  }
+  /* about page */
+  .about-commit-image img,
+  .how-image img {
+    width: 24rem;
+    height: 30rem;
+  }
+  .about-commit-text p {
+    padding-right: 5rem;
+    font-size: 15px;
+  }
+  .about-us h3,
+  .how h3,
+  .blog-head h3,
+  .product-head h3 {
+    font-size: 13px;
+  }
+  .about-us p,
+  .how p,
+  .blog-head p,
+  .product-head p,
+  .product-button a {
+    font-size: 15px;
+  }
+  .our-products,
+  .blog-images {
+    display: none;
+  }
+  .carousel {
+    display: block;
+  }
+  .product-background {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+  .testimonies-text p {
+    width: 80%;
+  }
+  .blogs {
+    margin-right: -2rem;
+    margin-left: 2.5rem;
+  }
+
+  .back img,
+  .forward img {
+    width: 3rem;
+    height: 3rem;
+  }
+  .image-testimony {
+    margin-right: 25px;
+  }
+  .image-comment {
+    padding: 10px 20px;
+  }
+  .video-play {
+    margin-top: -9rem;
+    margin-left: 13rem;
+  }
+  .video-play img {
+    width: 4rem;
+  }
+  .blog-images {
+    margin-left: 4.5rem;
+  }
+  .footers {
+    display: block;
+    gap: 0px;
+    gap: initial;
+  }
+  .the-bakery {
+    width: 75%;
+  }
+  .icons-the-bakery {
+    margin-left: 40px;
+  }
+  .company,
+  .contact {
+    padding-top: 40px;
+  }
+  .company h3,
+  .contact h3 {
+    margin-top: 0px;
+  }
+  .copy-terms {
+    margin: 0px 25px;
+  }
+}
+
+/* responsiveness for 430px screen */
+@media screen and (max-width: 430px) {
+  .sidebar {
+    width: 100%;
+  }
+  .fa-xmark {
+    margin-left: -385px;
+  }
+  .logo img {
+    margin-left: -15px;
+  }
+  /* home-content page */
+  .box-items {
+    margin-left: 2.5rem;
+    bottom: 1rem;
+    width: 82%;
+  }
+  /* about page */
+  .about-commit-image img,
+  .how-image img {
+    width: 23rem;
+    height: 30rem;
+  }
+  .how-image,
+  .about-commit-image {
+    margin-left: 2rem;
+    padding: 0;
+  }
+  .about-commit-text {
+    padding-left: 1.5rem;
+  }
+  .about-commit-text a {
+    padding-left: 4rem;
+  }
+  .about-commit-text p {
+    padding-right: 1.5rem;
+    font-size: 15px;
+  }
+  .how-text {
+    padding-right: 2rem;
+  }
+  .about-us h3,
+  .how h3,
+  .blog-head h3,
+  .product-head h3 {
+    font-size: 13px;
+  }
+  .about-us p,
+  .how p,
+  .blog-head p,
+  .product-head p,
+  .product-button a {
+    font-size: 15px;
+  }
+  .our-products,
+  .blog-images {
+    display: none;
+  }
+  .carousel {
+    display: block;
+  }
+  .product-background {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+  .testimonies-text p {
+    width: 95%;
+  }
+  .blogs {
+    margin-right: -2rem;
+    margin-left: 2rem;
+  }
+  .back img,
+  .forward img {
+    width: 3rem;
+    height: 3rem;
+  }
+  .image-testimony {
+    gap: 15px;
+    margin-right: 25px;
+    margin-left: 20px;
+  }
+  .image-comment {
+    margin: 0;
+    width: 100%;
+    padding: 10px 13px;
+  }
+  .video-play {
+    margin-top: -8rem;
+    margin-left: 12rem;
+  }
+  .video-play img {
+    width: 4rem;
+  }
+  .blog-images {
+    margin-right: 0rem;
+    margin-left: 0rem;
+  }
+  .footers {
+    display: block;
+    gap: 0px;
+    gap: initial;
+  }
+  .the-bakery {
+    width: 75%;
+  }
+  .icons-the-bakery {
+    margin-left: 40px;
+  }
+  .company,
+  .contact {
+    padding-top: 40px;
+  }
+  .company h3,
+  .contact h3 {
+    margin-top: 0px;
+  }
+  .copy-terms {
+    margin: 0px 25px;
+  }
+  .copyright p,
+  .terms p {
+    font-size: 8px;
+  }
+}
+
+/* responsiveness for 414px screen */
+@media screen and (max-width: 414px) {
+  .fa-xmark {
+    margin-left: -365px;
+  }
+  .how-image,
+  .about-commit-image {
+    margin-left: 1.5rem;
+    padding: 0;
+  }
+  .image-comment img {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+  .desc h3 {
+    font-size: 13px;
+  }
+  .video-play img {
+    width: 3rem;
+  }
+  .videos {
+    padding: 0;
+    margin-left: 1rem;
+  }
+  .video-play {
+    margin-top: -7.5rem;
+    margin-left: 11rem;
+  }
+}

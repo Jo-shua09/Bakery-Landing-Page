@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <meta name="theme-color" content="#282828">
+    <link rel="shortcut icon"
+        href="images/bakery-logo-design-template-for-business-bakery-shop-design-free-vector-removebg-preview_3-removebg-preview.png"
+        type="image/x-icon">
+    <script src="https://kit.fontawesome.com/dc4a396c3d.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <title>MY BAKERY</title>
+</head>
+
+<body>
+    <section class="header-nav" id="home">
+        <div class="navigations">
+            <nav>
+                <!-- responsive navbar -->
+                <ul class="sidebar">
+                    <i onclick="hideSidebar()" class="fa-solid fa-xmark"></i>
+                    <li><a href="#home" class="active">home</a></li>
+                    <li><a href="#about">about us</a></li>
+                    <li><a href="#works"> how it works</a></li>
+                    <li><a href="#products">products</a></li>
+                    <li><a href="#testimony">testimonioal</a></li>
+                    <li><a href="#blog">blog</a></li>
+                    <span class="search-res">
+                        <input type="text" placeholder="search">
+                        <i class="fa-solid fa-search"></i>
+                    </span>
+                    <span class="cart-profile-res">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <img src="images/20231008_151353 2.jpg" alt="">
+                    </span>
+                </ul>
+
+                <!-- desktop navbar -->
+                <ul>
+                    <li><a href="index.html"><img
+                                src="/images/bakery-logo-design-template-for-business-bakery-shop-design-free-vector-removebg-preview_3-removebg-preview.png"
+                                alt=""></a></li>
+                                <div class="logo">
+                                    <a href="index.html"><img
+                                        src="/images/bakery-logo-design-template-for-business-bakery-shop-design-free-vector-removebg-preview_3-removebg-preview.png"
+                                        alt=""></a>
+                                </div>
+                    <li class="responsive"><a href="#home" class="active">home</a></li>
+                    <li class="responsive"><a href="#about">about us</a></li>
+                    <li class="responsive"><a href="#works"> how it works</a></li>
+                    <li class="responsive"><a href="#products">products</a></li>
+                    <li class="responsive"><a href="#testimony">testimonioal</a></li>
+                    <li class="responsive"><a href="#blog">blog</a></li>
+                    <span class="search responsive">
+                        <input type="text" placeholder="search">
+                        <i class="fa-solid fa-search"></i>
+                    </span>
+                    <span class="cart-profile responsive">
+                        <i class="fa-solid fa-cart-shopping fa-beat"></i>
+                        <img src="images/20231008_151353 2.jpg" alt="">
+                    </span>
+                    <li>
+                        <i onclick="showSidebar()" class="fas fa-bars" id="display"></i>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- home-page contents -->
+        <div class="home" id="home">
+            <div class="home-text">
+                <h1>Indulge Our Sweet Tooth With Delicious <span>Delights</span></h1>
+                <p>Treat yourself to delicious goodies at our bakery shop and satisfy your sweet cravings with our
+                    heavenly treats.</p>
+            </div>
+            <div class="buttons">
+                <a href=""><button>shop now</button></a>
+                <span><a href=""><button>see menu</button></a></span>
+            </div>
+        </div>
+    </section>
+    <div class="up">
+         <a href="#home">
+        <i class="fa-solid fa-arrow-up fa-bounce"></i>
+        </a>
+    </div>
+
+    <!-- box-items page -->
+    <section class="box-items show" id="box-items">
+        <div class="box">
+            <div class="items item1">
+                <div class="icon">
+                    <i class="fa-solid fa-van-shuttle fa-bounce"></i>
+                </div>
+                <div class="text">
+                    <h4>free delivery</h4>
+                    <p>On orders above $50.00</p>
+                </div>
+            </div>
+            <div class="items item2">
+                <div class="icon">
+                    <i class="fa-solid fa-phone fa-shake"></i>
+                </div>
+                <div class="text">
+                    <h4>Reach Us: 234 000 0000</h4>
+                    <p>thebakeryshop@gmail.com</p>
+                </div>
+            </div>
+            <div class="items item3">
+                <div class="icon">
+                    <i class="fa-solid fa-money-bills fa-flip"></i>
+                </div>
+                <div class="text">
+                    <h4>payments</h4>
+                    <p>We ensure secure payments</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about us page -->
+    <section class="about" id="about">
+        <div class="about-us">
+            <h3>about us</h3>
+            <p>our <span>dedication</span>, your <span>delight</span></p>
+        </div>
+        <div class="about-us-desc">
+            <div class="about-commit-image">
+                <img src="images/Rectangle 9.jpg" alt="">
+            </div>
+            <div class="about-commit-text">
+                <p>Our commitment at The Bakery Shop is simple: quality ingredients, crafted with passion. Each creation
+                    embodies our dedication to excellence, delivering not just pastries, but moments of pure delight.
+                    Welcome to our world of artisanal baking, where every treat is a reflection of our unwavering
+                    commitment to your satisfaction.
+                </p>
+                <a href=""><button>shop now</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- how it works page -->
+    <section class="works" id="works">
+        <div class="how">
+            <h3>how it works</h3>
+            <p>How Our <span>Bakery Website</span> Works </p>
+        </div>
+        <div class="how-text-desc-image">
+            <div class="text-how-cover">
+                <div class="how-text">
+                    <div class="how-icon">
+                        <i class="fa-solid fa-compass"></i>
+                    </div>
+                    <div class="text-how">
+                        <h4>Browse and Explore</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula ante et ante bibendum,
+                            vitae
+                            sodales ipsum placerat. Cras vel neque nec urna tempus fermentum.
+                        </p>
+                    </div>
+                </div>
+                <div class="how-text">
+                    <div class="how-icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div class="text-how">
+                        <h4>Seamless Effortless Ordering</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula ante et ante bibendum,
+                            vitae
+                            sodales ipsum placerat. Cras vel neque nec urna tempus fermentum.
+                        </p>
+                    </div>
+                </div>
+                <div class="how-text">
+                    <div class="how-icon">
+                        <i class="fa-solid fa-money-bills"></i>
+                    </div>
+                    <div class="text-how">
+                        <h4>Secure Payment Transactions</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula ante et ante bibendum,
+                            vitae
+                            sodales ipsum placerat. Cras vel neque nec urna tempus fermentum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="how-image">
+                <img src="images/Rectangle 13.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- products page -->
+    <section class="products" id="products">
+        <div class="products-headings">
+            <div class="product-head">
+                <h3>spotlighted products</h3>
+                <p>our <span>spotlighted products</span></p>
+            </div>
+            <div class="product-button">
+                <a href="">See more</a>
+            </div>
+        </div>
+        <div class="carousel-sliderr">        
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="product-background">
+                        <div class="products-image ">
+                            <img src="images/Rectangle 14.jpg" alt="">
+                            <h4>red velvet cake</h4>
+                        </div>
+                        <div class="products-desc">
+                            <ul>
+                                <i class="fa-solid fa-clock"></i>
+                                <li>35 min</li>
+                                <li>25 km</li>
+                                <li>free delivery</li>
+                            </ul>
+                            <h5>$65.00 <span>$95.00</span></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="product-background">
+                        <div class="products-image ">
+                            <img src="images/Rectangle 20.jpg" alt="">
+                            <h4>chocolate cookies</h4>
+                        </div>
+                        <div class="products-desc">
+                            <ul>
+                                <i class="fa-solid fa-clock"></i>
+                                <li>15 min</li>
+                                <li>1 km</li>
+                                <li>free delivery</li>
+                            </ul>
+                            <h5>$60.00 <span>$75.00</span></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="product-background">
+                        <div class="products-image ">
+                            <img src="images/Rectangle 21.jpg" alt="">
+                            <h4>doughnuts</h4>
+                        </div>
+                        <div class="products-desc">
+                            <ul>
+                                <i class="fa-solid fa-clock"></i>
+                                <li>10 min</li>
+                                <li>1 km</li>
+                                <li>free delivery</li>
+                            </ul>
+                            <h5>$52.00 <span>$55.00</span></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="product-background">
+                        <div class="products-image ">
+                            <img src="images/Rectangle 24.jpg" alt="">
+                            <h4>chin chin</h4>
+                        </div>
+                        <div class="products-desc">
+                            <ul>
+                                <i class="fa-solid fa-clock"></i>
+                                <li>15 min</li>
+                                <li>1 km</li>
+                                <li>free delivery</li>
+                            </ul>
+                            <h5>$50.00 <span>$65.00</span></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="product-background">
+                        <div class="products-image ">
+                            <img src="images/Rectangle 23.jpg" alt="">
+                            <h4>chocolate bread</h4>
+                        </div>
+                        <div class="products-desc">
+                            <ul>
+                                <i class="fa-solid fa-clock"></i>
+                                <li>15 min</li>
+                                <li>1.5 km</li>
+                                <li>free delivery</li>
+                            </ul>
+                            <h5>$75.00 <span>$85.00</span></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="product-background">
+                        <div class="products-image ">
+                            <img src="images/Rectangle 22.jpg" alt="">
+                            <h4>chocolate muffins</h4>
+                        </div>
+                        <div class="products-desc">
+                            <ul>
+                                <i class="fa-solid fa-clock"></i>
+                                <li>15 min</li>
+                                <li>1.5 km</li>
+                                <li>free delivery</li>
+                            </ul>
+                            <h5>$75.00 <span>$85.00</span></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        <div class="our-products">
+            <div class="product-join">
+                <div class="product-background">
+                    <div class="products-image ">
+                        <img src="images/Rectangle 14.jpg" alt="">
+                        <h4>red velvet cake</h4>
+                    </div>
+                    <div class="products-desc">
+                        <ul>
+                            <i class="fa-solid fa-clock"></i>
+                            <li>35 min</li>
+                            <li>25 km</li>
+                            <li>free delivery</li>
+                        </ul>
+                        <h5>$65.00 <span>$95.00</span></h5>
+                    </div>
+                </div>
+                <div class="product-background">
+                    <div class="products-image ">
+                        <img src="images/Rectangle 20.jpg" alt="">
+                        <h4>chocolate cookies</h4>
+                    </div>
+                    <div class="products-desc">
+                        <ul>
+                            <i class="fa-solid fa-clock"></i>
+                            <li>15 min</li>
+                            <li>1 km</li>
+                            <li>free delivery</li>
+                        </ul>
+                        <h5>$60.00 <span>$75.00</span></h5>
+                    </div>
+                </div>
+                <div class="product-background">
+                    <div class="products-image ">
+                        <img src="images/Rectangle 21.jpg" alt="">
+                        <h4>doughnuts</h4>
+                    </div>
+                    <div class="products-desc">
+                        <ul>
+                            <i class="fa-solid fa-clock"></i>
+                            <li>10 min</li>
+                            <li>1 km</li>
+                            <li>free delivery</li>
+                        </ul>
+                        <h5>$52.00 <span>$55.00</span></h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-join second">
+                <div class="product-background">
+                    <div class="products-image ">
+                        <img src="images/Rectangle 24.jpg" alt="">
+                        <h4>chin chin</h4>
+                    </div>
+                    <div class="products-desc">
+                        <ul>
+                            <i class="fa-solid fa-clock"></i>
+                            <li>15 min</li>
+                            <li>1 km</li>
+                            <li>free delivery</li>
+                        </ul>
+                        <h5>$50.00 <span>$65.00</span></h5>
+                    </div>
+                </div>
+                <div class="product-background">
+                    <div class="products-image ">
+                        <img src="images/Rectangle 23.jpg" alt="">
+                        <h4>chocolate bread</h4>
+                    </div>
+                    <div class="products-desc">
+                        <ul>
+                            <i class="fa-solid fa-clock"></i>
+                            <li>15 min</li>
+                            <li>1.5 km</li>
+                            <li>free delivery</li>
+                        </ul>
+                        <h5>$75.00 <span>$85.00</span></h5>
+                    </div>
+                </div>
+                <div class="product-background">
+                    <div class="products-image ">
+                        <img src="images/Rectangle 22.jpg" alt="">
+                        <h4>chocolate muffins</h4>
+                    </div>
+                    <div class="products-desc">
+                        <ul>
+                            <i class="fa-solid fa-clock"></i>
+                            <li>15 min</li>
+                            <li>1.5 km</li>
+                            <li>free delivery</li>
+                        </ul>
+                        <h5>$75.00 <span>$85.00</span></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- testimony page -->
+        <section class="testimony" id="testimony">
+            <div class="testimonies-text">
+                <h2>testimonioal</h2>
+                <h4>Over <span>670+ Customers</span> Reviews</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula ante et ante bibendum, vitae
+                    sodales ipsum placerat. Cras vel neque nec urna tempus fermentum.</p>
+            </div>
+            <div class="images-rating">
+                <div class="rating-images">
+                    <img src="images/Ellipse 19.png" alt="">
+                    <img src="images/Ellipse 20.png" alt="">
+                    <img src="images/Ellipse 21.png" alt="">
+                </div>
+                <div class="rating">
+                    <h5> <i class="fa-solid fa-star"></i>4.6 <span>(674 Reviews)</span></h5>
+                </div>
+            </div>
+            <div class="image-testimony">
+                <div class="back">
+                    <img src="images/Back.png" alt="">
+                </div>
+                <div class="image-comment">
+                    <div class="comment-image">
+                        <img src="images/Ellipse 21.png" alt="">
+                    </div>
+                    <div class="desc">
+                        <h3>joshua onyeka</h3>
+                        <h5>Business owner</h5>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <br>
+                        <div class="par">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula ante et ante
+                                bibendum, vitae sodales ipsum placerat. Cras vel neque nec urna tempus fermentum.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="forward">
+                    <img src="images/Forward.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- short video page -->
+        <section class="video" id="video">
+            <div class="videos">
+                <img src="images/Rectangle 11.png" alt="">
+            </div>
+            <div class="video-play">
+                <img src="images/Circled Play.png" alt="">
+            </div>
+        </section>
+
+        <!-- blogs page -->
+        <section class="blog" id="blog">
+            <div class="blog-post">
+                <div class="blog-head">
+                    <h3>latest blog</h3>
+                    <p>our <span>latest</span> news</p>
+                </div>
+            </div>
+
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="blogs">
+                            <img src="images/Rectangle 28.jpg" alt="">
+                            <h5>december 23, 2023 <span>(4) comments</span></h5>
+                            <p>Pan-Tastic Baking: Mastering Bread on the Griddle.</p>
+                            <a href="">read more<img src="images/Right Arrow.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="blogs">
+                            <img src="images/Rectangle 29.jpg" alt="">
+                            <h5>december 24, 2023 <span>(8) comments</span></h5>
+                            <p>Kneading Excellence: The Chef's Touch in Perfecting Dough</p>
+                            <a href="">read more<img src="images/Right Arrow.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="blogs">
+                            <img src="images/Rectangle 30.jpg" alt="">
+                            <h5>december 25, 2023 <span>(8) comments</span></h5>
+                            <p>Oven-Baked Bliss: The Art of Perfect Bread Making</p>
+                            <a href="">read more<img src="images/Right Arrow.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="blogs">
+                            <img src="images/Rectangle 31.jpg" alt="">
+                            <h5>december 26, 2023 <span>(5) comments</span></h5>
+                            <p>Inside the Bakery: Different Units, One Delicious Operation</p>
+                            <a href="">read more<img src="images/Right Arrow.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="blogs">
+                            <img src="images/Rectangle 32.jpg" alt="">
+                            <h5>december 27, 2023 <span>(0) comments</span></h5>
+                            <p> Unveiling the Amazing Results of Baking Mastery</p>
+                            <a href="">read more<img src="images/Right Arrow.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="blogs">
+                            <img src="images/Rectangle 33.jpg" alt="">
+                            <h5>december 28, 2023 <span>(9) comments</span></h5>
+                            <p>Crafting Perfection: The Baker's Art from Flour to Finale</p>
+                            <a href="">read more<img src="images/Right Arrow.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-images">
+                <div class="blogs">
+                    <img src="images/Rectangle 28.jpg" alt="">
+                    <h5>december 23, 2023 <span>(4) comments</span></h5>
+                    <p>Pan-Tastic Baking: Mastering Bread on the Griddle.</p>
+                    <a href="">read more<img src="images/Right Arrow.png" alt=""></a>
+                </div>
+                <div class="blogs">
+                    <img src="images/Rectangle 29.jpg" alt="">
+                    <h5>december 24, 2023 <span>(8) comments</span></h5>
+                    <p>Kneading Excellence: The Chef's Touch in Perfecting Dough</p>
+                    <a href="">read more<img src="images/Right Arrow.png" alt=""></a>
+                </div>
+                <div class="blogs">
+                    <img src="images/Rectangle 30.jpg" alt="">
+                    <h5>december 25, 2023 <span>(8) comments</span></h5>
+                    <p>Oven-Baked Bliss: The Art of Perfect Bread Making</p>
+                    <a href="">read more<img src="images/Right Arrow.png" alt=""></a>
+                </div>
+            </div>
+
+            <div class="blog-images second-two">
+                <div class="blogs">
+                    <img src="images/Rectangle 31.jpg" alt="">
+                    <h5>december 26, 2023 <span>(5) comments</span></h5>
+                    <p>Inside the Bakery: Different Units, One Delicious Operation</p>
+                    <a href="">read more<img src="images/Right Arrow.png" alt=""></a>
+                </div>
+                <div class="blogs">
+                    <img src="images/Rectangle 32.jpg" alt="">
+                    <h5>december 27, 2023 <span>(0) comments</span></h5>
+                    <p> Unveiling the Amazing Results of Baking Mastery</p>
+                    <a href="">read more<img src="images/Right Arrow.png" alt=""></a>
+                </div>
+                <div class="blogs">
+                    <img src="images/Rectangle 33.jpg" alt="">
+                    <h5>december 28, 2023 <span>(9) comments</span></h5>
+                    <p>Crafting Perfection: The Baker's Art from Flour to Finale</p>
+                    <a href="">read more<img src="images/Right Arrow.png" alt=""></a>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- footer page -->
+    <section class="footer" id="footer">
+        <div class="footers">
+            <div class="footer-desc the-bakery">
+                <div class="bakery-heading">
+                    <div class="the-bakery-image">
+                        <img src="images/bakery-logo-design-template-for-business-bakery-shop-design-free-vector-removebg-preview_3-removebg-preview.png"
+                            alt="">
+                    </div>
+                    <div class="the-bakery-head">
+                        <h2>the bakery shop</h2>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula ante et ante bibendum,
+                    vitae
+                    sodales ipsum placerat. Cras vel neque nec urna tempus fermentum.</p>
+                <div class="icons-the-bakery">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+
+            <div class="footer-desc company">
+                <h3>company</h3>
+                <a href="">home</a> <br>
+                <a href="">features</a> <br>
+                <a href="">services</a> <br>
+                <a href="">about us</a> <br>
+                <a href="">contact us</a>
+            </div>
+
+            <div class="footer-desc contact">
+                <h3>contact</h3>
+                <a href="">09063482183</a> <br>
+                <a href="">www.thebakeryshop.com</a> <br>
+                <a href="">thebakeryshop@gmail.com</a> <br>
+                <p>XYZ, Toby Avenue downtown, Los Angeles</p>
+            </div>
+        </div>
+        <hr>
+        <div class="copy-terms">
+            <div class="copyright">
+                <p>Copyright 2023 The Bakery Shop. All Rights Reserved.</p>
+            </div>
+            <div class="terms">
+                <p>User Terms & Condition <span>Privacy Policy</span></p>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html
