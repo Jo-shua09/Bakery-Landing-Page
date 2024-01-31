@@ -1025,7 +1025,7 @@ img {
 /* responsiveness */
 
 /* responsive to 800px screens */
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 800px) and (max-width: 945px) {
   .responsive {
     display: none;
   }
