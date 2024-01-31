@@ -1805,7 +1805,7 @@ img {
     z-index: 999;
     display: block;
     right: 0;
-    margin-top: 9rem;
+    margin-top: -11.5rem;
     margin-right: 10px;
     background-color: var(--color2);
     padding: 15px;
@@ -2005,7 +2005,7 @@ img {
 }
 
 /* responsiveness for 430px screen */
-@media screen and (max-width: 430px) {
+@media screen and (min-width: 430px) and (max-width: 489px) {
   .sidebar {
     width: 100%;
   }
@@ -2024,8 +2024,7 @@ img {
   /* about page */
   .about-commit-image img,
   .how-image img {
-    width: 23rem;
-    height: 30rem;
+    width: 93%;
   }
   .how-image,
   .about-commit-image {
@@ -2131,14 +2130,32 @@ img {
 }
 
 /* responsiveness for 414px screen */
-@media screen and (max-width: 414px) {
+@media screen and (min-width: 396px) and (max-width: 429px) {
   .fa-xmark {
     margin-left: -365px;
+  }
+  .box-items {
+    margin-left: 2.5rem;
+    bottom: -22rem;
+    width: 82%;
   }
   .how-image,
   .about-commit-image {
     margin-left: 1.5rem;
     padding: 0;
+  }
+  .about-commit-text {
+    padding-left: 2rem;
+  }
+  .about-commit-image img,
+  .how-image img {
+    width: 92.7%;
+  }
+  .about-commit-text p {
+    padding-right: 2rem;
+  }
+  .about-commit-text a {
+    padding-left: 3.5rem;
   }
   .image-comment img {
     width: 4.5rem;
@@ -2147,12 +2164,25 @@ img {
   .desc h3 {
     font-size: 13px;
   }
+  .image-testimony {
+    gap: 15px;
+    margin-right: 25px;
+    margin-left: 20px;
+  }
+  .image-comment {
+    margin: 0;
+    width: 100%;
+    padding: 10px 13px;
+  }
   .video-play img {
     width: 3rem;
   }
   .videos {
     padding: 0;
     margin-left: 1rem;
+  }
+  .up {
+    margin-top: -13.5rem;
   }
   .video-play {
     margin-top: -7.5rem;
