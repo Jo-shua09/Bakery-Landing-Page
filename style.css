@@ -2136,13 +2136,17 @@ img {
   }
   .box-items {
     margin-left: 2.5rem;
-    bottom: -5rem;
+    bottom: -6.5rem;
     width: 82%;
   }
   .how-image,
   .about-commit-image {
     margin-left: 1.5rem;
     padding: 0;
+  }
+  .products-headings {
+    padding: 0px 5px;
+    padding-top: 50px;
   }
   .about-commit-text {
     padding-left: 2rem;
@@ -2182,7 +2186,7 @@ img {
     margin-left: 1rem;
   }
   .up {
-    margin-top: 3.5rem;
+    margin-top: 2.5rem;
   }
   .video-play {
     margin-top: -7.5rem;
